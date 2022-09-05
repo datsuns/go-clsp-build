@@ -1,0 +1,21 @@
+
+Packages:
+  - pkg_1
+
+CommonFlags:
+  - -Ipath/to/include
+  - -Dmacro
+  - -Umacro_to_undef
+
+pkg_1:
+  location:
+    ~/path/to/code
+  patterns:
+    - c
+    - cpp
+  targets:
+    - src
+    - tests
+  flags:
+    - -Iinc/specific
+

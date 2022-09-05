@@ -1,0 +1,5 @@
+*.exe
+*.yml
+*.json
+
+!example.yml
