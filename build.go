@@ -36,7 +36,8 @@ func findFiles(conf *LspConfig) ([]string, error) {
 		err := filepath.Walk(".", func(path string, info os.FileInfo, err error) error {
 			for _, k := range keys {
 				if k.MatchString(path) {
-					ret = append(ret, filepath.Join(workPath, path))
+					//ret = append(ret, filepath.Join(workPath, path))
+					ret = append(ret, filepath.Join(p, path))
 				}
 			}
 			return nil
